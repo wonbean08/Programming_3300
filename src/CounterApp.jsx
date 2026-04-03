@@ -7,11 +7,16 @@ import heroImg from './assets/hero.png'
 function CounterApp() {
   //count : 현재 또는 이전 상태 값; setCount():상태값 변경 함수
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
-    <h1>0</h1>
+    <h1>{count}</h1>
     <button onClick={()=>setCount((count)=>count+1)}>+</button>
+    <button onClick={()=>setCount((count)=>count+2)}>2</button>
+    <button onClick={()=>setCount((count)=>count-1)}>-</button>
+    <button onClick={()=>setCount(0)}>reset</button>
+    {/* <button onClick={setCount(0)}>reset</button> */}
       {/* <button
         className="counter"
         onClick={() => setCount((count) => count + 1)}
