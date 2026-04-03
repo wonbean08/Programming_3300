@@ -1,4 +1,4 @@
-# Programming 수업 소스코드
+# Programming 수업 소스코드🦉🦘🦐🦭🐢🦕🐑🦞🐙🦩🦑
 ## 02_counter
 vanilla HTML, JavaScript
 ## React 시작
@@ -6,3 +6,5 @@ vanilla HTML, JavaScript
 ```shell
 npm create vite@latest .
 ```
+
+### CounterApp🦘
