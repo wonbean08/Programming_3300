@@ -1,10 +1,10 @@
 .todo{
     width: max(80%, 400px);
     margin: 20px auto;
-    background-color:aliceblue;
+    background-color:rgb(248, 237, 224);
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 2px 4px rgba(4, 27, 48, 0.9);
+    box-shadow: 0 2px 4px rgb(104, 104, 84);
 }
 
 .todo_form{
