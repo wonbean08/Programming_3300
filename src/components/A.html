@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIP - Collaborate. Code. Create.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; }
+        .yellow-bg { background-color: #F3E54F; }
+        .yellow-text { color: #F3E54F; }
+        .glow { box-shadow: 0 0 20px rgba(243, 229, 79, 0.3); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-10 py-4 bg-black/80 backdrop-blur-sm">
+        <div class="flex items-center gap-2">
+            <span class="yellow-text font-black text-2xl italic">WIP </></span>
+        </div>
+        <div class="space-x-4">
+            <button class="text-sm font-medium">Sign in</button>
+            <button class="border border-white px-4 py-1 rounded-md text-sm font-medium hover:bg-white hover:text-black transition">Sign up</button>
+        </div>
+    </nav>
+
+    <section class="h-screen yellow-bg flex items-center px-20 relative overflow-hidden">
+        <div class="w-1/2 text-black">
+            <h1 class="text-7xl font-black leading-tight mb-6">
+                Talk is cheap.<br>Show me the<br>code.
+            </h1>
+            <p class="text-lg font-medium max-w-md opacity-80">
+                Programs must be written for people to read, and only incidentally for machines to execute.
+            </p>
+        </div>
+        <div class="w-1/2 flex justify-center">
+            <div class="w-[450px] h-[450px] bg-zinc-900 rounded-sm flex items-center justify-center shadow-2xl">
+                <span class="text-white text-3xl font-bold">개발한 화면</span>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
+    </section>
+
+    <section class="min-h-screen bg-black flex flex-col items-center justify-center py-20">
+        <div class="text-center mb-16">
+            <h2 class="yellow-text text-5xl font-black mb-4">Collaborate. Code. Create.</h2>
+            <p class="text-zinc-400 text-xl italic">From idea to code, together.</p>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-8 px-20 w-full max-w-7xl">
+            <div class="yellow-bg h-[400px] rounded-sm glow flex flex-col justify-end p-6 relative">
+                <div class="w-full h-10 bg-zinc-900"></div>
+            </div>
+            <div class="yellow-bg h-[400px] rounded-sm glow flex flex-col justify-end p-6 relative">
+                <div class="w-full h-10 bg-zinc-900"></div>
+            </div>
+            <div class="yellow-bg h-[400px] rounded-sm glow flex flex-col justify-end p-6 relative">
+                <div class="w-full h-10 bg-zinc-900"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-screen bg-black flex items-center px-20">
+        <div class="w-1/2 flex justify-center">
+            <div class="w-[450px] h-[450px] yellow-bg glow rounded-sm"></div>
+        </div>
+        <div class="w-1/2 pl-10">
+            <h2 class="yellow-text text-6xl font-black mb-6">Real-time<br>coding for<br>teams.</h2>
+            <p class="text-zinc-400 text-xl max-w-sm leading-relaxed">
+                A simple space for developers to collaborate and build better code.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
