@@ -11,7 +11,7 @@ export default function TodoList({todos}) {
                 {/* {todosㅇ 값이 잇으면 todoItem에 todo를 넣음} */}
                 {todos.length>0 &&  
                     todos.map( (todo) =>
-                        <TodoItem todo={todo}/>
+                        <TodoItem key={todo.id} todo={todo}/>
                     )
                     
                 }

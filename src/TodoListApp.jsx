@@ -20,6 +20,12 @@ function TodoListApp() {
         ...todos,new Todo(text)
     ])
 
+    const toggleTodo=(id)=>{
+        setTodos((todos)=>
+        
+        )
+    }
+
     return (
         <div className="todo">
             <TodoHeader/>
