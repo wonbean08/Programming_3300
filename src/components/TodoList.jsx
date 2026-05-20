@@ -1,21 +1,17 @@
-import TodoItemEmpty from "./TodoItemEmpty"
-import TodoItem from "./TodoItem"
+import TodoItemEmpty from './TodoItemEmpty.jsx'
+import TodoItem from './TodoItem.jsx'
 
-export default function TodoList({todos}) {
+export default function TodoList({ todos, ...rest }) {
     return (
-        <>
-            <ul className="todo_list">
-                {/* {todosㅇ 값이 없으며 todoItemEmpty} */}
-                {todos.length===0 &&<TodoItemEmpty />}
-
-                {/* {todosㅇ 값이 잇으면 todoItem에 todo를 넣음} */}
-                {todos.length>0 &&  
-                    todos.map( (todo) =>
-                        <TodoItem key={todo.id} todo={todo}/>
-                    )
-                    
-                }
-            </ul>
-        </>
+        <ul className="todo__list">
+            {/* todos에 값이 없으면, TodoItemEmpty */}
+            {todos.length === 0 && <TodoItemEmpty />}
+            {/* todos에 값이 있으면, TodoItem에 todo를 넣자 */}
+            {todos.length > 0 &&
+                todos.map((todo) =>
+                    <TodoItem key={todo.id} todo={todo} {...rest} />
+                )
+            }
+        </ul>
     )
 }

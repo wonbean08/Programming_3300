@@ -1,13 +1,14 @@
-//https://programming-3315.wjo54465.workers.dev/
+// https://programming-3300.ssep4u.workers.dev/
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 // import './index.css'
-import TodoListApp from './TodoListApp.jsx'
 import './reset.css'
+import TodoListApp from './TodoListApp.jsx'
+import HomeApp from './HomeApp.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <TodoListApp />
+    <HomeApp />
   </StrictMode>,
 )
